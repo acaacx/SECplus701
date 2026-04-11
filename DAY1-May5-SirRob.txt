@@ -267,12 +267,12 @@ ephone-dn 8
 ephone-dn 10
  number 7198
 Ephone 1
-  Mac-address cafe.face.baba
+  Mac-address 64e9.50ca.9f7e
   type 8945
   button 1:8 2:7 3:6 4:5
   restart
 Ephone 2
-  Mac-address fafa.caca.baba
+  Mac-address ccd8.c1fb.1519
   type 8945
   button 1:4 2:3 3:2 4:1
   restart  
@@ -349,10 +349,10 @@ dial-peer voice 62 Voip
  destination-pattern 62..
  session target ipv4:10.62.100.8
  codec g711ULAW
-dial-peer voice 71 Voip
- destination-pattern 71..
- session target ipv4:10.71.100.8
- codec g711ULAW
+!dial-peer voice 71 Voip
+!destination-pattern 71..
+!session target ipv4:10.71.100.8
+!codec g711ULAW
 dial-peer voice 72 Voip
  destination-pattern 72..
  session target ipv4:10.72.100.8
