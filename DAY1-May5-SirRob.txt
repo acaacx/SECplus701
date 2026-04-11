@@ -73,7 +73,7 @@ end
 Securing Switches using AAA: authentication, authorization, accounting.
 config t
 username admin privilege 15 secret pass
-username namemo privilege 15 secret pass
+username alaric privilege 15 secret pass
 line vty 0 14
 login local
 end
@@ -150,11 +150,11 @@ vlan 10
 vlan 50
    name IPCCTVLAN
 vlan 69
-   name UPPERMGMT
+   name SOC-L1
 vlan 70
-    name ACCOUNTING
+    name SOC-L2
 vlan 71
-    name HR
+    name SOC-L3
 vlan 100
    name VOICEVLAN
 Int Fa 0/2
@@ -189,10 +189,10 @@ config t
 ip routing
 ip dhcp pool CAMERA6
 host 10.71.50.6 255.255.255.0
-client-identifier abcd.1234.cafb
+client-identifier 001a.0704.7f67
 ip dhcp pool CAMERA8
 host 10.71.50.8 255.255.255.0
-client-identifier abcd.1234.cafb
+client-identifier 001a.0709.c652
 end
 show ip dhcp binding
 
